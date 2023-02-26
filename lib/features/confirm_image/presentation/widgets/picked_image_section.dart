@@ -10,7 +10,7 @@ class PickedImageSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: Get.height * 0.8,
+      height: Get.height,
       child: Image.file(
         File(path),
         fit: BoxFit.fill,

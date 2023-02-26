@@ -9,13 +9,11 @@ class ConfirmImageViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+    return Stack(
       children: [
         PickedImageSection(path: (Get.routing.args) as String),
         const ConfirmImageBottomBar()
       ],
-    ));
+    );
   }
 }
