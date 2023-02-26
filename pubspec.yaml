@@ -77,3 +77,7 @@ flutter:
       fonts:
         - asset: assets/fonts/Jua/Jua-Regular.ttf
           weight: 400
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+          weight: 700     
