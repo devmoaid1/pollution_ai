@@ -16,7 +16,7 @@ class HomeActionsSection extends StatelessWidget {
       children: [
         CustomButton(
           child:
-              const ButtonRow(title: 'camera', iconPath: AppAssets.cameraIcon),
+              const ButtonRow(title: 'Camera', iconPath: AppAssets.cameraIcon),
           onTap: () {},
         ),
         42.h.hSpace,
