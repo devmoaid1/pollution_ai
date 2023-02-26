@@ -16,6 +16,7 @@ class PollutionApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) => GetMaterialApp(
+        debugShowCheckedModeBanner: false,
         title: AppConstants.appName,
         navigatorKey: Get.key,
         initialRoute: AppRouter.getIntialRoute(),
