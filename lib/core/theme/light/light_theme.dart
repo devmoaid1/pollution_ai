@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:pollution_ai/core/constants/styles.dart';
 import 'package:pollution_ai/core/theme/light/app_colors_light.dart';
 
 final appBarTheme = AppBarTheme(
@@ -24,6 +25,10 @@ final elevatedButtonTheme = ElevatedButtonThemeData(
             borderRadius: BorderRadius.circular(16.r)))));
 
 final ThemeData lightTheme = ThemeData.light().copyWith(
+    textTheme: TextTheme(
+        bodySmall: AppStyles.kBodySmallTextStyle,
+        bodyMedium: AppStyles.kBodyMediumTextStyle,
+        headlineLarge: AppStyles.kHeadingTextStyle),
     scaffoldBackgroundColor: AppColorsLight.kScaffoldBackGroundColor,
     elevatedButtonTheme: elevatedButtonTheme,
     appBarTheme: appBarTheme);
