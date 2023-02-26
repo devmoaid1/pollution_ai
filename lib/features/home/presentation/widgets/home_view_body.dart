@@ -24,7 +24,7 @@ class HomeViewBody extends StatelessWidget {
             const HomeInstructionSection(),
             40.h.vSpace,
             const HomeActionsSection(),
-            14.h.vSpace,
+            20.h.vSpace,
             const HomeGraphicsSection(),
           ],
         ),

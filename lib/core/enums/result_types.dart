@@ -1,0 +1,4 @@
+enum ResultType {
+  pollutionType,
+  confidence,
+}

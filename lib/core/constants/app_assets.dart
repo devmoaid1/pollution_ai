@@ -6,4 +6,6 @@ class AppAssets {
   static const resubmitIcon = 'assets/icons/resubmit.svg';
   static const retakeIcon = 'assets/icons/retake.svg';
   static const homeGraphics = 'assets/images/home_graphics.svg';
+  static const pollutionTypeGrahic = 'assets/images/pollution_type.svg';
+  static const confidenceGraphic = 'assets/images/confidence.svg';
 }

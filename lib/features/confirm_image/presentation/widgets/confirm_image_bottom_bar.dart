@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:pollution_ai/core/routes/app_routes.dart';
 
 import '../../../../core/constants/app_assets.dart';
 import '../../../../core/widgets/button_row.dart';
@@ -27,7 +29,9 @@ class ConfirmImageBottomBar extends StatelessWidget {
               child: CustomButton(
                 child: const ButtonRow(
                     title: 'Retake', iconPath: AppAssets.retakeIcon),
-                onTap: () {},
+                onTap: () {
+                  Get.offNamed(AppRouter.getIntialRoute());
+                },
               ),
             ),
             const Spacer(),
@@ -37,7 +41,10 @@ class ConfirmImageBottomBar extends StatelessWidget {
               child: CustomButton(
                 child: const ButtonRow(
                     title: 'Confirm', iconPath: AppAssets.confirmIcon),
-                onTap: () {},
+                onTap: () {
+                  Get.offNamed(AppRouter.getResultRoute(),
+                      arguments: (Get.routing.args) as String);
+                },
               ),
             ),
             const Spacer()

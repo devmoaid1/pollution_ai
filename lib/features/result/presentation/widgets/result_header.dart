@@ -17,7 +17,8 @@ class ResultHeader extends StatelessWidget {
               .textTheme
               .headlineLarge!
               .copyWith(color: Colors.black),
-        )
+        ),
+        const Spacer(),
       ],
     );
   }

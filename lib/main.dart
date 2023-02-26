@@ -1,14 +1,14 @@
-import 'package:device_preview/device_preview.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:pollution_ai/app.dart';
 import 'package:pollution_ai/core/dependecies.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  // intialize dependecies
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
   setupLocator();
-  runApp(DevicePreview(
-      enabled: kDebugMode,
-      builder: (context) {
-        return const PollutionApp();
-      }));
+  runApp(const PollutionApp());
 }
