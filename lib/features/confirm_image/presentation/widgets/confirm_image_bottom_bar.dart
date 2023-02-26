@@ -30,7 +30,7 @@ class ConfirmImageBottomBar extends StatelessWidget {
                 child: const ButtonRow(
                     title: 'Retake', iconPath: AppAssets.retakeIcon),
                 onTap: () {
-                  Get.offNamed(AppRouter.getIntialRoute());
+                  Get.toNamed(AppRouter.getIntialRoute());
                 },
               ),
             ),
@@ -42,7 +42,7 @@ class ConfirmImageBottomBar extends StatelessWidget {
                 child: const ButtonRow(
                     title: 'Confirm', iconPath: AppAssets.confirmIcon),
                 onTap: () {
-                  Get.offNamed(AppRouter.getResultRoute(),
+                  Get.toNamed(AppRouter.getResultRoute(),
                       arguments: (Get.routing.args) as String);
                 },
               ),
