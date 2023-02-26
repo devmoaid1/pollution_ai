@@ -18,14 +18,14 @@ class HomeViewBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            36.h.vSpace,
+            46.h.vSpace,
             const AppIcon(),
             60.h.vSpace,
             const HomeInstructionSection(),
             40.h.vSpace,
             const HomeActionsSection(),
             14.h.vSpace,
-            const HomeGraphicsSection()
+            const HomeGraphicsSection(),
           ],
         ),
       ),

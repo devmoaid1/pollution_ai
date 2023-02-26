@@ -8,10 +8,13 @@ class HomeGraphicsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomSvgIcon(
-      iconPath: AppAssets.homeGraphics,
-      width: 385.w,
-      boxFit: BoxFit.fill,
+    return Padding(
+      padding: EdgeInsets.only(right: 20.w),
+      child: CustomSvgIcon(
+        iconPath: AppAssets.homeGraphics,
+        width: 385.w,
+        boxFit: BoxFit.fill,
+      ),
     );
   }
 }

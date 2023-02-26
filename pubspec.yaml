@@ -29,6 +29,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  bloc: ^8.1.1
   camera: ^0.10.3
   cupertino_icons: ^1.0.2
   device_preview: ^1.1.0
@@ -71,7 +72,6 @@ flutter:
       fonts:
         - asset: assets/fonts/Lato/Lato-Regular.ttf
           weight: 400
-       
 
     - family: Jua
       fonts:
